@@ -43,6 +43,8 @@ steps:
   inputs: 
     targetType: 'filePath' # Optional. Options: filePath, inline
     filePath: .\Hello.ps1
+    errorActionPreference: 'stop' 
+    failOnStderr: true
   
 - task: VSTest@2
   inputs:
